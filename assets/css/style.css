@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+    color: #000;
+  
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+*:focus {
+  outline: 0;
+}
+
+
+/* //////Primary Style//////// */
+
+.main {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+header {
+	line-height: 100px;
+	height: 100px;
+}
+header h1 {
+	font-size: 30px bold;
+	font-family: 'Oswald', sans-serif;
+}
+
+header li {
+	float: left;
+	width: 18.5%;
+	text-align: center;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+header li a {
+	font-weight: 900;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.text {
+	font-size: 2rem;
+	padding: 2rem 0;
+	-moz-columns: 3;
+	-webkit-columns: 3;
+	columns: 3;
+}
+
+
+/* /////Pictures on carousel///// */
+
+.mySlides {
+    display: block;
+    margin:0 auto;
+    max-width: 1600px;
+    max-height: 600px;
+    overflow:visible;
+    
+}
+
+.margin-wrapOne{
+    max-width: 1024px;
+    margin: auto;
+    position: relative;
+}
+
+/* /////Three image containers (use 25% for four, and 50% for two, etc)////// */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 70px;
+  
+}
+
+ .margin-wrapTwo{
+    max-width: 2000px;
+    margin: auto;
+    position: relative;
+ }
+  
+/* Clear floats after image containers */
+.row::after {
+    content:'';
+    clear: both;
+    display: table;
+}
+
+p{
+   bottom:110px;
+   left: 55px;
+   position: relative;
+   color:white;
+   font-size: 30px;
+   text-shadow: 2px 2px 8px rgb(17, 3, 3);
+
+}
+
+p:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+   
+}
+
+
+#headingTwo,
+#headingThree {
+    padding-left:28px;
+}
+
+
+/* ///////Big center button////// */
+
+.button{
+
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid rgb(3, 3, 3);
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:rgb(7, 7, 7);
+  text-align:center;
+  transition: all 0.15s;
+  border-radius: 20px;
+  /* width: 97%; */
+  margin-left: 137%;
+  margin-right: 160px;
+  margin-top: 70px;
+}
+        
+button:hover{
+   color:rgb(185, 185, 185);
+   border-color:rgb(185, 185, 185);
+}
+        
+button:active{
+    color:rgb(7, 7, 7);
+    border-color:rgb(7, 7, 7);
+}
+        
+@media all and (max-width:30em){
+       }        
+
+#scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+  }
+
+
+/* /////////////The footer/////////// */
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    background: #f5f3f3;
+    border-top: 2px solid #a1a1a1;
+    height: 200px;
+
+}
+
+#footer-text {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 900px;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    color: black;
+    display: block;
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+    
+}
+
+/* //////////MAP///////// */
+#map {  
+    width:600px;
+    height:500px;
+    left:200px;
+    margin-bottom: 40px;
+}
+
+#map.hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+
+/* /////////// Text next to map////// */
+
+#mapText {
+    font-size: 36px;
+    font-weight: 900px;
+    font-family: Montserrat,sans-serif;
+    color: black;
+    padding-left: 770px;
+    top: 1160px;
+    text-align: center;
+    position: absolute;
+    text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+    
+}
+
+
+
+ /* http://waitanimate.wstone.io/#!/ */
+.shake {
+    animation: shake-animation 3.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+  @keyframes shake-animation {
+     0% { transform:translate(0,0) }
+    1.78571% { transform:translate(5px,0) }
+    3.57143% { transform:translate(0,0) }
+    5.35714% { transform:translate(5px,0) }
+    7.14286% { transform:translate(0,0) }
+    8.92857% { transform:translate(5px,0) }
+    10.71429% { transform:translate(0,0) }
+    100% { transform:translate(0,0) }
+}
+
+
+
+
+
+
+
+
